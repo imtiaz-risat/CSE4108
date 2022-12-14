@@ -13,14 +13,14 @@ int main()
     // Octal(106) = Decimal(70)
     // ASCII value 70 = 'D'
 
-        // WHAT DOES ESCAPE DO....⭐⭐⭐
+    // WHAT DOES ESCAPE DO....⭐⭐⭐
     printf("ABC\33    r -  XYZ\n");
     // Octal(33) = Decimal(27)
     // ASCII value 27 = ESCAPE
     // ESCAPE causes the next char along with spaces to be skipped
     // Ekhane ABC er porer space gula skip hbe and immediate next character 'r' o skip hbe
     // So it will print ABC -  XYZ
-    printf("ABC\x1B\n        XYZ\n");
+    printf("ABC\x1B\n        XYZ\n"); // to use HEXA must use /x*** (x as prefix)
     // Hexa(1B) = Decimal(27)
     // ASCII value 27 = ESCAPE
     // It doesn't skips the next line ⭐
